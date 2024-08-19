@@ -7,7 +7,7 @@ def count_problems():
     count = 0
     for root, dirs, files in os.walk('.'):
         if 'problemset' in root or 'contests' in root:
-            count += len([f for f in files if f.endswith(('.cpp', '.py', '.java', '.js'))])
+            count += len([f for f in files if f.endswith(('.cpp', '.py', '.java'))])
     return count
 
 def get_primary_language():
@@ -38,7 +38,6 @@ def get_codeforces_info(handle):
             }
     return None
 
-# Replace 'your_codeforces_handle' with your actual Codeforces handle
 codeforces_handle = 'Zenith_1009'
 
 total_problems = count_problems()
