@@ -2,6 +2,7 @@ import os
 import json
 from collections import Counter
 import requests
+from datetime import datetime, date
 
 def count_problems():
     count = 0
@@ -38,16 +39,24 @@ def get_codeforces_info(handle):
             }
     return None
 
+def calculate_days_until_goal():
+    goal_date = date(2025, 6, 1)  # Replace with your actual goal date
+    today = date.today()
+    days_until_goal = (goal_date - today).days
+    return max(0, days_until_goal)
+
 codeforces_handle = 'Zenith_1009'
 
 total_problems = count_problems()
 primary_language = get_primary_language()
 codeforces_info = get_codeforces_info(codeforces_handle)
+days_until_goal = calculate_days_until_goal()
 
 stats = {
     "total_problems": total_problems,
     "primary_language": primary_language,
-    "codeforces_handle": codeforces_handle
+    "codeforces_handle": codeforces_handle,
+    "days_until_goal": days_until_goal
 }
 
 if codeforces_info:
@@ -59,3 +68,4 @@ with open('stats.json', 'w') as f:
 print(f"Total problems solved: {total_problems}")
 print(f"Primary language: {primary_language}")
 print(f"Codeforces info: {codeforces_info}")
+print(f"Days until goal: {days_until_goal}")
