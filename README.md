@@ -20,7 +20,7 @@ Welcome to my Codeforces repository! This is a record of my coding adventures an
 
 ## 📈 Future Goals
 
-- Reach Expert by: !![Days until goal](https://img.shields.io/badge/dynamic/json?color=green&label=Days%20until%20goal&query=%24.days_until_goal&url=https%3A%2F%2Fraw.githubusercontent.com%2FZenith1009%2Fcodeforces%2Fmain%2Fstats.json)
+- Reach Expert by: ![Days until goal](https://img.shields.io/badge/dynamic/json?color=green&label=Days%20until%20goal&query=%24.days_until_goal&url=https%3A%2F%2Fraw.githubusercontent.com%2FZenith1009%2Fcodeforces%2Fmain%2Fstats.json)
 - Solve a Div. 3 contest
 
 ## 🤝 Connect With Me
