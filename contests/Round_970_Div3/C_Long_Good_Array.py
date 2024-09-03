@@ -5,8 +5,8 @@ def main():
     for _ in range(t):
         l, r = map(int, input().split())
         diff = r - l
-        k = 1
-        while (k * (k + 1)) // 2 <= diff:
+        k = 0
+        while (k * (k + 1)) <= (diff * 2):
             k += 1
         print(k)
 
